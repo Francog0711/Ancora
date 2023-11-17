@@ -227,9 +227,26 @@
   #info-interes:hover{
     transition: all 0.4s;
   }
+  @keyframes show{
+    from{
+      opacity: 0;
+      scale: 25%;
+    }
+
+    to {
+      opacity: 1;
+      scale:100%;
+    }
+  }
   .box-ancora{
-    border-radius: 10px;
-    border: 3px solid rgb(30, 30, 34);
+    view-timeline-name: --box;
+    view-timeline-axis: block;
+
+    animation-timeline: --box;
+    animation-name: show;
+
+    animation-range: entry 25% cover 40%;
+    animation-fill-mode: both;
   }
 
   /* SECTION */
