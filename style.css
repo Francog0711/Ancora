@@ -12,9 +12,14 @@
     list-style: none;
     margin: 0;
     align-items: center;
+  } 
+
+  .container-nav {
+    display: flex;
+    justify-content: space-between;
   }
 
-  .navbar-toggler {
+   .navbar-toggler {
     border: none;
   }
 
