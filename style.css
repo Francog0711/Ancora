@@ -35,7 +35,7 @@
   } */
 
 
-  @media screen and (max-width: 990px) {
+  @media screen and (max-width: 990px) { 
   .nav-vertical {
     display: flex;
     flex-direction: column;
@@ -357,6 +357,17 @@
   background-color: #4181ac;
 }
 
+
+/* MEDIA QUERYS */
+
+
+
+
+
+
+
+
+
 /* ANIMACIONES */
 @-webkit-keyframes fade-in {
   0% {
@@ -366,6 +377,7 @@
     opacity: 1;
   }
 }
+
 @keyframes fade-in {
   0% {
     opacity: 0;
