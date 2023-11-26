@@ -2,4 +2,19 @@ body{
     background-image: url(img/1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    backdrop-filter: blur(2px);
 }
+ textarea{
+    height: 150px;
+ }
+ button{
+    border: none !important;
+ }
+.btn-back:hover{
+    background-color: brown !important; 
+}
+.btn-back a:hover {
+    color: #fff !important;
+
+}
+
