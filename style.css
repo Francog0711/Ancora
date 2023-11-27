@@ -35,7 +35,7 @@
   } */
 
 
-  @media screen and (max-width: 990px) {
+  @media screen and (max-width: 990px) { 
   .nav-vertical {
     display: flex;
     flex-direction: column;
@@ -337,16 +337,6 @@
   height: auto;
 }
 
-.box2 a{
-  text-decoration: none;
-  color:#0099ff;
-}
-
-.box2 a:hover{
-  color: #ffffff;
-  transform: scale(1.1);
-}
-
 .redes a{
   text-decoration: none;
   text-align: center;
@@ -367,6 +357,17 @@
   background-color: #4181ac;
 }
 
+
+/* MEDIA QUERYS */
+
+
+
+
+
+
+
+
+
 /* ANIMACIONES */
 @-webkit-keyframes fade-in {
   0% {
@@ -376,6 +377,7 @@
     opacity: 1;
   }
 }
+
 @keyframes fade-in {
   0% {
     opacity: 0;
