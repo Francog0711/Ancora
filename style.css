@@ -337,6 +337,16 @@
   height: auto;
 }
 
+.box2 a{
+  text-decoration: none;
+  color:#0099ff;
+}
+
+.box2 a:hover{
+  color: #ffffff;
+  transform: scale(1.1);
+}
+
 .redes a{
   text-decoration: none;
   text-align: center;
