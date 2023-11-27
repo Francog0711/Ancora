@@ -1,6 +1,6 @@
-  html{
-    padding: 0;
-  }
+html{
+  padding: 0;
+}
   body{
     font-family: saira, sans-serif;
     /* background: linear-gradient(180deg, rgba(251,251,245,1) 0%, rgba(50,50,50,1) 100%); */
@@ -372,12 +372,6 @@
 
 
 /* MEDIA QUERYS */
-
-
-
-
-
-
 
 
 
