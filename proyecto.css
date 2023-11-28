@@ -1,4 +1,25 @@
+* {
+    font-family: saira, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
 .titulo-projecto{
     background-color: #142452;
     color: #fff;
+}
+
+.pro-1{
+    background-color: #0a012500;
+}
+
+/* Agrega estilos personalizados según sea necesario */
+.carousel {
+    width: 300px; /* Establece el ancho del carrusel según tus necesidades */
+    margin: auto;   
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: auto;
 }
