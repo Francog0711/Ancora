@@ -67,7 +67,7 @@
   <p>Lo expuesto a continuacion son proyectos de los profesionales...</p>
 </div>
 </div>
-<img src="img/4.jpg" alt="" class="container-fluid p-0 top-0 object-fit-cover">
+<img src="img/4.jpg" alt="" class="container-fluid p-0 top-0 vh-100 object-fit-cover">
 
 
 <a href="#section2" class="scroll-down">
@@ -75,7 +75,7 @@
 </a>
 
 
-<div class="row p-0 mt-5 hvr-box-shadow-outset ">
+<div class="row p-0 mt-5 hvr-box-shadow-outset">
   <div class="col-md-6 text-bg-light">
     <div id="carrusel" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
@@ -91,7 +91,7 @@
 </div>
 
           
-          <div class="texto-col col-md-6 text-bg-dark hvr-box-shadow-outset text-center">
+          <div class="cartel-inicio col-md-6  hvr-box-shadow-outset text-center">
               <h2>Monoambiente</h2>
               <p>30m²</p>
               <p>1 Ambiente</p>
@@ -115,7 +115,7 @@
                 </div>
             </div>
         </div>
-          <div class="texto-col col-md-6 text-bg-dark text-center">
+          <div class="col-md-6 cartel-inicio text-center">
               <h2>Cancha de Futbol 5</h2>
               <p>380m²</p>
               <p>1 Cantina</p>
@@ -179,6 +179,7 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js" integrity="sha512-v5oV4uQ/DqJ8VaIsbW5KwKrT/8GXNdOuq/0VikNEpUE76qqCKK+q/Zc9Y4mTKKegT6Fl2p1e5NvRW2PtkQCcJw==" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 <script src="https://unpkg.com/scrollreveal"></script>
 <script type="text/javascript" src="main.js"></script>
 
@@ -190,5 +191,19 @@
       });
   });
 </script>
+
+<script>
+  $(document).ready(function() {
+      // Manejar clic en la flecha de scroll
+      $('.scroll-down').click(function() {
+          // Obtener la posición de la siguiente sección
+          var nextSectionTop = $('.row').offset().top;
+
+          // Animar el desplazamiento hacia la siguiente sección
+          $('html, body').animate({ scrollTop: nextSectionTop }, 500); // 1000 es la duración en milisegundos
+      });
+  });
+</script>
+
     </body>
 </html>
