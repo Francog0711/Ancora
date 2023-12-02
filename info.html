@@ -15,6 +15,9 @@
       integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Agrega la biblioteca de animaciones de animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link href="./Hover-master/css/hover.css" rel="stylesheet" media="all">
     <link rel="stylesheet" href="style.css" />
     <script
@@ -26,57 +29,59 @@
   <body>
     <!-- HEADER -->
 
-    <!-- LOGO -->
+    <header class="container-nav container-fluid text-bg-dark z-2 position-absolute bg-opacity-25">
+  
+      <!-- NAV -->
+      <nav class="navbar navbar-expand-lg">
+          <!-- LOGO -->
+          <div class="logo-container">
+            <img src="./img/ANCORA 01 png.png" />
+          </div>
+            
+          <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNavDropdown"
+              aria-controls="navbarNavDropdown"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+              class="collapse navbar-collapse justify-content-end"
+              id="navbarNavDropdown"
+            >
+              <ul class="nav-vertical nav-underline p-4">
+                <li class="nav-item">
+                  <a class="nav-link fs-5" aria-current="page" href="./index.html"
+                    >Inicio</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link fs-5" href="./FormularioAncora.html"
+                    >Contáctanos</a
+                  >
+                </li>
+                
+              </ul>
+        </nav>
+      </header>
 
-    <!-- NAV -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-nav container-fluid">
-        <div class="logo-container">
-          <img src="./img/ANCORA 01 png.png" />
-        </div>
 
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNavDropdown"
-          aria-controls="navbarNavDropdown"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div
-          class="collapse navbar-collapse justify-content-end"
-          id="navbarNavDropdown"
-        >
-          <ul class="nav-vertical nav-underline p-4">
-            <li class="nav-item">
-              <a class="nav-link fs-5" aria-current="page" href="./index.html"
-                >Inicio</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link fs-5" href="./FormularioAncora.html"
-              >Contáctanos</a
-              >
-            </li>
-           
-          </ul>
-        </div>
-      </div>
-    </nav>
+<div class="cartel-inicio row-12 text-slider p-4 ms-0 position-absolute animate__animated animate__fadeIn ">
+         <h1 class="">Info de interes</h1>
+  <div class="">
+  <h3>Utilizar nuevos metodos ayuda a mejorar</h3>
+  <p>Informacion recopilada para exponer metodos y herramientas innovadoras del mercado...</p>
+</div>
+</div>
+<img src="img/descuento-banner.png" alt="" class="h-img container-fluid p-0 top-0 vh-100 object-fit-cover">
 
-    <div class="cartel-inicio row-12 text-slider p-4 ms-0 bg-opacity-75 text-center">
-      <h1 class="">Info de interes</h1>
-      <div class="">
-      <h3>Utilizar nuevos metodos ayuda a mejorar</h3>
-      <p>Informacion recopilada para exponer metodos y herramientas innovadoras del mercado...</p>
-    </div>
-    </div>
     
 
-    <div class="container">
+    <div class="container cartel-inicio mt-5">
       <div class="row p-5">
           <!-- Columna 1 -->
           <div class="col-md-4">
@@ -160,5 +165,9 @@
     integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
     crossorigin="anonymous"
   ></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
   <script src="https://unpkg.com/scrollreveal"></script>
   <script type="text/javascript" src="main.js"></script>
