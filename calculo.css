@@ -1,0 +1,32 @@
+.cartel-calculo {
+    top: 22rem;
+    background-color: #142452;
+    color: #ffffff;
+    top: 8rem;
+    z-index: 10;
+  }
+
+  .container-form {
+    margin-top: 15rem;
+  }
+
+  .btn-calcular {
+    margin-right: 4rem;
+  }
+
+  .resultado {
+
+  }
+
+  .cartel-calculo p {
+  }
+
+  .formulario-calculo {
+    width: 55rem;
+    height: 24rem;
+  }
+
+  .metros-div input {
+    margin: 0  0 0 2rem;
+    width: 5rem;
+  }
