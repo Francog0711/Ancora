@@ -23,6 +23,7 @@
       src="https://kit.fontawesome.com/304be95d7a.js"
       crossorigin="anonymous"
     ></script>
+    
 </head>
 <body>
 
@@ -70,11 +71,11 @@
         <p class="fs-2">Calculo por Metro Cuadrado</p>
         </div>
         <div class="container-form d-flex justify-content-center align-items-center ">
-            <form class="formulario-calculo text-bg-dark p-4 position-relative " action="form.php" method="post" id="formulario-calculo">
+            <form class="formulario-calculo text-bg-dark p-4 position-relative " action="" method="post" id="formulario-calculo">
                 <div class="form-group row">
                     <div class="metros-div justify-content-center mt-4 d-flex">
                         <label for="nombre" class="d-flex align-items-center">Metros Cuadrados:</label>
-                        <input type="number" class="form-control rounded-0" name="nombre" required>
+                        <input type="number" class="form-control rounded-0" id="metros-cuadrados" name="nombre" required>
                     </div>
                 </div>
         
@@ -85,8 +86,8 @@
                 </div>
         
                 <div class="form-group mt-4 d-flex justify-content-center">
-                    <label for="mensaje" class="resultado">Resultado:</label>
-                    <p class="fs-3" id="monto"></p>
+                    <label for="resultado" class="resultado">Resultado: </label>
+                    <p class="" id="monto"></p>
                 </div> 
                 <br>
                 <div class="d-flex justify-content-center align-items-center">
@@ -103,4 +104,5 @@
 
     
 </body>
+<script src="calculos.js"></script>
 </html>
