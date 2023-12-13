@@ -92,8 +92,8 @@ body {
 }
 
 .img-servicios-1 {
-  height: auto;
-  width: auto;
+  height: auto ;
+  width: auto ;
   margin: 0 auto;
   overflow: hidden;
   -webkit-animation: slide-in-right 1s cubic-bezier(0.25, 0.46, 0.45, 0.94)
@@ -145,7 +145,7 @@ body {
 }
 
 .img-servicios-2 {
-  height: auto;
+  height:auto;
   width: auto;
   margin: 0 auto;
   visibility: hidden;
