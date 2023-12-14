@@ -69,21 +69,21 @@ inputs.forEach((input) => {
 	input.addEventListener('blur', validarFormulario);
 });
 
-formulario.addEventListener('submit', () => {
+// formulario.addEventListener('submit', () => {
 
-	const terminos = document.getElementById('terminos');
-	if(campos.apellido && campos.nombre && campos.provincia && campos.correo && campos.telefono && campos.ciudad && terminos.checked ){
-		formulario.reset();
+// 	const terminos = document.getElementById('terminos');
+// 	if(campos.apellido && campos.nombre && campos.provincia && campos.correo && campos.telefono && campos.ciudad && terminos.checked ){
+// 		formulario.reset();
 
-		document.getElementById('formulario__mensaje-exito').classList.add('formulario__mensaje-exito-activo');
-		setTimeout(() => {
-			document.getElementById('formulario__mensaje-exito').classList.remove('formulario__mensaje-exito-activo');
-		}, 5000);
+// 		document.getElementById('formulario__mensaje-exito').classList.add('formulario__mensaje-exito-activo');
+// 		setTimeout(() => {
+// 			document.getElementById('formulario__mensaje-exito').classList.remove('formulario__mensaje-exito-activo');
+// 		}, 5000);
 
-		document.querySelectorAll('.formulario__grupo-correcto').forEach((icono) => {
-			icono.classList.remove('formulario__grupo-correcto');
-		});
-	} else {
-		document.getElementById('formulario__mensaje').classList.add('formulario__mensaje-activo');
-	}
-});
+// 		document.querySelectorAll('.formulario__grupo-correcto').forEach((icono) => {
+// 			icono.classList.remove('formulario__grupo-correcto');
+// 		});
+// 	} else {
+// 		document.getElementById('formulario__mensaje').classList.add('formulario__mensaje-activo');
+// 	}
+// });
