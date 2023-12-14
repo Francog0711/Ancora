@@ -69,8 +69,7 @@ inputs.forEach((input) => {
 	input.addEventListener('blur', validarFormulario);
 });
 
-formulario.addEventListener('submit', (e) => {
-	e.preventDefault();
+formulario.addEventListener('submit', () => {
 
 	const terminos = document.getElementById('terminos');
 	if(campos.apellido && campos.nombre && campos.provincia && campos.correo && campos.telefono && campos.ciudad && terminos.checked ){
