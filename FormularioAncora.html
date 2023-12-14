@@ -70,45 +70,79 @@
         <form action="https://formsubmit.co/francogabrielalconchel@gmail.com" method="POST" id="formulario-contacto" class="formulario text-bg-dark p-4">
             <div class="form-group row">
                 <div class="col-md-6 mt-4">
+                  <div class="formulario__grupo" id="grupo__nombre">
                     <label for="nombre" class="">Nombre:</label>
-                    <input type="text" class="form-control rounded-0" name="Nombre" required>
+                    <input type="text" class="form-control rounded-0" name="nombre" required>
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
                 </div>
+                <p class="formulario__input-error">El nombre no puede contener numeros, letras y guion bajo.</p>
+              </div>
                 <div class="col-md-6 mt-4">
+                  <div class="formulario__grupo" id="grupo__apellido">
                     <label for="apellido" class="">Apellido:</label>
-                    <input type="text" class="form-control rounded-0" name="Apellido" required>
+                    <input type="text" class="form-control rounded-0" name="apellido" required>
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                  </div>
                 </div>
+                
             </div>
     
             <div class="form-group row">
                 <div class="col-md-6 mt-4">
-                    <label for="email" class="">Email:</label>
-                    <input type="email" class="form-control rounded-0" name="Email" required>
+                  <div class="formulario__grupo" id="grupo__correo">
+                    <label for="correo" class="">Correo:</label>
+                    <input type="email" class="form-control rounded-0" name="correo" required>
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
                 </div>
+              </div>
                 <div class="col-md-6 mt-4">
+                  <div class="formulario__grupo" id="grupo__telefono">
                     <label for="numero" class="">Telefono:</label>
-                    <input type="tel" class="form-control rounded-0" name="Numero" placeholder="Ejemplo: (342)5557777" required>
-                </div>
+                    <input type="text" class="form-control rounded-0" name="telefono" placeholder="Ejemplo: (342)5557777" required>
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                  </div>
+              </div>
             </div>
     
             <div class="form-group row">
                 <div class="col-md-6 mt-4">
+                  <div class="formulario__grupo" id="grupo__ciudad">
                     <label for="ciudad" class="">Ciudad:</label>
-                    <input type="text" class="form-control rounded-0" name="Ciudad">
+                    <input type="text" class="form-control rounded-0" name="ciudad">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
                 </div>
+              </div>
                 <div class="col-md-6 mt-4">
+                  <div class="formulario__grupo" id="grupo__provincia">
                     <label for="provincia " class="">Provincia:</label>
-                    <input type="text" class="form-control rounded-0" name="Provincia">
+                    <input type="text" class="form-control rounded-0" name="provincia">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
                 </div>
             </div>
-    
+          </div>
+
             <div class="form-group mt-4">
-                <label for="mensaje" class="">Mensaje:</label>
-                <textarea name="Mensaje" class="form-control rounded-0" required></textarea>
-            </div> <br>
+              <div class="formulario__grupo" id="grupo__comentar">
+                <label for="comentar" class="">Comentar:</label>
+                <textarea type="text" name="comentar" class="form-control rounded-0"></textarea>
+              </div>
+            </div>
+
+            <div class="formulario__grupo" id="grupo__terminos">
+              <label class="formulario__label">
+                <input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
+                Acepto los Terminos y Condiciones
+              </label>
+            </div>
+      
+            <br>
     
             <button type="submit" class="btn btn-primary rounded-0" id="enviar">Enviar</button>
             <button type="submit" class="btn-back btn btn-primary rounded-0 bg-warning "><a class="p-1 text-decoration-none text-dark" href="index.html">Volver al inicio</a></button>
-        </form><br>
+        
+            <input type="hidden" name="_next" value="https://francog0711.github.io/ ">
+            <input type="hidden" name="_captcha" value="false">
+          </form><br>
     </div>
 
 
@@ -158,7 +192,7 @@
 </footer>
     
     </body>
-
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
     <script
     src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
     integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
@@ -171,6 +205,7 @@
   ></script>
   <script src="https://unpkg.com/scrollreveal"></script>
   <script type="text/javascript" src="main.js"></script>
+  <script src="formulario.js"></script>
 </html>
 
 
