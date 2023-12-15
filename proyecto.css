@@ -15,7 +15,7 @@
 
 /* Agrega estilos personalizados según sea necesario */
 .carousel {
-    width: 350px; /* Establece el ancho del carrusel según tus necesidades */
+    width: auto; /* Establece el ancho del carrusel según tus necesidades */
     margin: auto; 
 }
 
