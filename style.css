@@ -32,22 +32,6 @@ html{
     border: none;
   }
 
-  /* .navbar.toggler:focus {
-    box-shadow: 0;
-  } */
-
-
-  @media screen and (max-width: 990px) { 
-  .nav-vertical {
-    display: flex;
-    flex-direction: column;
-    list-style: none;
-    padding: 0;
-    justify-content: center;
-    align-items: center;
-  }
-  }
-
   .logo-container img{
     height: 60px;
   }
@@ -58,20 +42,6 @@ html{
     position: absolute;
     top: 100px;
     z-index: 20;
-  }
-
-  @media screen and (max-width: 560px) {
-    .text-slider-container {
-      position: absolute;
-      top: 10px;
-      height: 90px;
-    }
-
-    .text-slider-container h1,h3 {
-
-      font-size: 15px;
-    }
-    
   }
 
 
@@ -107,24 +77,6 @@ html{
     transform: scale(1.1);
   }
 
-  @media screen and (max-width:750px){
-    .wsp-btn a img {
-      left: 80%;
-      bottom: 70%;
-    }
-  }
-  @media screen and (min-width:850px){
-    .wsp-btn a img {
-      left: 90%;
-      bottom: 90%;
-    }
-  }
-  @media screen and (min-width:1300px){
-    .wsp-btn a img {
-      left: 93%;
-      top: 85%;
-    }
-  }
 
   @keyframes popup {
     0% {
@@ -154,21 +106,7 @@ html{
 
   }
   
-  @media screen and (max-width:750px){
-    .container-cards {
-      height: 140vh;
-    }
-  }
-  @media screen and (min-width:850px){
-    .container-cards {
-      height: 80vh;
-    }
-  }
-  @media screen and (min-width:1300px){
-    .container-cards {
-      height: 32vh;
-    }
-  }
+ 
 
   .container-cards div{
     border-radius: 5px;
@@ -270,7 +208,7 @@ html{
   .servicios-seccion {
     text-align: center;
     font-weight: 800;
-    margin-top: 20px;
+    margin-top: 15px;
     
   }
   
@@ -391,3 +329,56 @@ html{
     opacity: 1;
   }
 }
+
+
+  /*WSP*/
+
+  @media screen and (max-width:750px){
+    .wsp-btn a img {
+      left: 80%;
+      bottom: 70%;
+    }
+  }
+  @media screen and (min-width:850px){
+    .wsp-btn a img {
+      left: 90%;
+      bottom: 90%;
+    }
+  }
+  @media screen and (min-width:1300px){
+    .wsp-btn a img {
+      left: 93%;
+      top: 85%;
+    }
+  }
+
+  /*GRID CARDS*/
+
+  @media screen and (max-width:750px){
+    .container-cards {
+      height: 140vh;
+    }
+  }
+  @media screen and (min-width:850px){
+    .container-cards {
+      height: 80vh;
+    }
+  }
+  @media screen and (min-width:1300px){
+    .container-cards {
+      height: 32vh;
+    }
+  }
+
+  /*NAV*/
+
+  @media screen and (max-width: 990px) { 
+    .nav-vertical {
+      display: flex;
+      flex-direction: column;
+      list-style: none;
+      padding: 0;
+      justify-content: center;
+      align-items: center;
+    }
+  }

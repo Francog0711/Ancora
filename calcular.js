@@ -28,6 +28,6 @@ btnCalcular.addEventListener('click', () => {
     mensajeSpan.textContent = 'Para más detalles, comunícate por WhatsApp o el formulario.';
     mensajeSpan.className = 'mensaje-contacto';
 
-    // Agregar el span al DOM (puedes ajustar la ubicación según tus necesidades)
+    // Agregar el span al DOM 
     resultado.parentNode.appendChild(mensajeSpan);
 });
