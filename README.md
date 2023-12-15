@@ -1,12 +1,11 @@
 # Proyecto Ancora
 
 ## Información general
-- **Fecha de comienzo del proyecto:** 3 de Junio de 2023
+- **Fecha de comienzo del proyecto:** 10 de septiembre de 2023
 - **Empresa:** Ancora Construcciones
 
 ## Equipo de trabajo
-- Nombre del desarrollador 1 : Christian Gonzalez
-- Nombre del desarrollador 2 : Franco Alconchel
+- Nombre del desarrollador 1 : Franco Alconchel
 
 ## Cambios realizados
 
