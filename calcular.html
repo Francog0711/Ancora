@@ -16,8 +16,8 @@
       crossorigin="anonymous"
     />
     <link href="./Hover-master/css/hover.css" rel="stylesheet" media="all">
-    <link rel="stylesheet" href="public/style.css" />
-    <link rel="stylesheet" href="public/calcular.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="calcular.css" />
     <script
       src="https://kit.fontawesome.com/304be95d7a.js"
       crossorigin="anonymous"
@@ -70,14 +70,22 @@
               </ul>
         </nav>
       </header>
+
+      <div class="cartel-inicio row-12 text-slider p-3 ms-0 bg-opacity-75 w-50">
+        <h1 class="">ÁNCORA PROYECTOS</h1>
+        <p class="">SECCION DE CALCULO</p>
+      </div>
      
       <div class="container text-bg-dark mt-5 w-75 text-center">
-        <h1 class="text-center fs-1 text-bg-light p-3 m-0">Calcular</h1>
+        <h1 class="text-center cartel-inicio row-12 text-slider p-3 ms-0 bg-opacity-75">Calcular</h1>
+
+        <span class="text-danger">*Ingrese los metros cuadrados que desea calcular</span><br>
+        <span class="text-danger">*Recuerde que es un calculo aproximado</span>
     
         <div class="row justify-content-center mt-5">
             <label class="col-3 col-form-label">Metros Cuadrados</label>
             <div class="col-8 col-md-4">
-                <input type="number" class="form-control" id="mts-2">
+                <input type="text" class="form-control" id="mts-2">
             </div>
         </div>
     
@@ -89,7 +97,7 @@
         </div>
     
         <div class="row justify-content-center mt-5">
-            <button type="submit" id="calcular" class="btn btn-primary w-50">Calcular</button>
+            <button type="submit" id="calcular" class="btn btn-primary w-25">Calcular</button>
         </div>
     </div>
 

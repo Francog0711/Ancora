@@ -1,5 +1,5 @@
 let metros = document.getElementById('mts-2');
-let precio = 0; // Inicializar el precio en 0
+let precio = 0;
 let operacion = 0;
 let resultado = document.getElementById('resultado');
 let btnCalcular = document.getElementById('calcular');
@@ -12,8 +12,6 @@ const fetchData = async () => {
     try {
         const res = await fetch('calcular.json');
         const data = await res.json();
-
-        // Obtener el precio del primer objeto en el array
         precio = data[0].precio;
         console.log(`Precio cargado: ${precio}`);
     } catch (error) {
@@ -24,4 +22,12 @@ const fetchData = async () => {
 btnCalcular.addEventListener('click', () => {
     operacion = metros.value * precio;
     resultado.textContent = operacion;
+
+    // Crear el span con el mensaje
+    const mensajeSpan = document.createElement('span');
+    mensajeSpan.textContent = 'Para más detalles, comunícate por WhatsApp o el formulario.';
+    mensajeSpan.className = 'mensaje-contacto';
+
+    // Agregar el span al DOM (puedes ajustar la ubicación según tus necesidades)
+    resultado.parentNode.appendChild(mensajeSpan);
 });
