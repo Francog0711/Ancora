@@ -19,15 +19,22 @@ const fetchData = async () => {
     }
 };
 
-btnCalcular.addEventListener('click', () => {
+btnCalcular.addEventListener('click', (event) => {
     operacion = metros.value * precio;
     resultado.textContent = operacion;
 
-    // Crear el span con el mensaje
-    const mensajeSpan = document.createElement('span');
-    mensajeSpan.textContent = 'Para más detalles, comunícate por WhatsApp o el formulario.';
-    mensajeSpan.className = 'mensaje-contacto';
+    // Verificar si ya existe un mensaje
+    const mensajeExistente = resultado.parentNode.querySelector('.mensaje-contacto');
+    
+    if (!mensajeExistente) {
+        
+        const mensajeSpan = document.createElement('span');
+        mensajeSpan.textContent = 'Para más detalles, comunícate por WhatsApp o el formulario.';
+        mensajeSpan.className = 'mensaje-contacto';
 
-    // Agregar el span al DOM 
-    resultado.parentNode.appendChild(mensajeSpan);
+        
+        resultado.parentNode.appendChild(mensajeSpan);
+    }
+
+    event.stopPropagation();
 });

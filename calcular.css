@@ -4,3 +4,7 @@ body{
     background-repeat: no-repeat;
     backdrop-filter: blur(2px);
 }
+
+.container {
+    height: 450px;
+}
