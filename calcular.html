@@ -15,21 +15,18 @@
       integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <!-- Agrega la biblioteca de animaciones de animate.css -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link href="./Hover-master/css/hover.css" rel="stylesheet" media="all">
     <link rel="stylesheet" href="public/style.css" />
+    <link rel="stylesheet" href="public/calcular.css" />
     <script
       src="https://kit.fontawesome.com/304be95d7a.js"
       crossorigin="anonymous"
     ></script>
-    <title>Ancora | Inicio</title>
+    <title>Ancora | Calcular</title>
   </head>
   <body>
-    <!-- HEADER -->
 
-    <header class="container-nav container-fluid text-bg-dark z-2 position-absolute bg-opacity-25">
+    <header class="container-nav container-fluid text-bg-dark z-2 position-relative bg-opacity-25">
   
       <!-- NAV -->
       <nav class="navbar navbar-expand-lg">
@@ -68,54 +65,30 @@
               </ul>
         </nav>
       </header>
-
-
-<div class="cartel-inicio row-12 text-slider p-4 ms-0 position-absolute animate__animated animate__fadeIn ">
-         <h1 class="">Info de interes</h1>
-  <div class="">
-  <h3>Utilizar nuevos metodos ayuda a mejorar</h3>
-  <p>Informacion recopilada para exponer metodos y herramientas innovadoras del mercado...</p>
-</div>
-</div>
-<img src="img/descuento-banner.png" alt="" class="h-img container-fluid p-0 top-0 vh-100 object-fit-cover">
-
+     
+      <div class="container text-bg-dark mt-5 w-75 text-center">
+        <h1 class="text-center fs-1 text-bg-light p-3 m-0">Calculadora</h1>
     
+        <div class="row justify-content-center mt-5">
+            <label class="col-3 col-form-label">Metros Cuadrados</label>
+            <div class="col-8 col-md-4">
+                <input type="number" class="form-control" id="mts-2">
+            </div>
+        </div>
+    
+        <div class="row justify-content-center mt-4">
+            <label class="col-3 col-form-label">Resultado</label>
+            <div class="col-8 col-md-4">
+                <span type="text" class="form-control" id="resultado">0</span>
+            </div>
+        </div>
+    
+        <div class="row justify-content-center mt-5">
+            <button type="submit" id="calcular" class="btn btn-primary w-50">Calcular</button>
+        </div>
+    </div>
 
-    <div class="container cartel-inicio mt-5">
-      <div class="row p-5">
-          <!-- Columna 1 -->
-          <div class="col-md-4">
-              <img src="img/Densidad.jpeg" alt="Imagen 1" class="img-fluid">
-              <h2>Construcción con Sentido: Densidad en Breve</h2>
-              <p>Descubre la esencia de la construcción entendiendo la "Densidad". 
-                En nuestra guía informativa, te explicamos la relación crucial entre masa y volumen. 
-                Estas pautas te ayudarán a tomar decisiones fundamentadas al elegir métodos de construcción. 
-                ¡Bienvenido a una elección consciente y bien informada!</p>
-          </div>
-  
-          <!-- Columna 2 -->
-          <div class="col-md-4">
-              <img src="img/conductividad-termica.jpg" alt="Imagen 2" class="img-fluid">
-              <h2>Conductividad térmica</h2>
-              <p>En esta sección, presentamos la "Conductividad Térmica". 
-                A través de una imagen llamativa, te explicamos de manera rápida cómo influye en la eficiencia térmica de un material. 
-                Descubre la facilidad con que permite el paso del calor, una consideración esencial para tu proyecto. 
-                ¡Bienvenido al mundo de la conductividad térmica, donde cada detalle cuenta!.</p>
-          </div>
-  
-          <!-- Columna 3 -->
-          <div class="col-md-4">
-              <img src="img/deformacion-constru.jpg" alt="Imagen 3" class="img-fluid">
-              <h2>Rigidez</h2>
-              <p>En esta sección, exploramos la "Rigidez". 
-                Representada con una imagen impactante, te explicamos de manera concisa que se trata de la resistencia de un material a la deformación. 
-                Descubre cómo la rigidez juega un papel clave en la durabilidad y estabilidad de tus elecciones constructivas. 
-                ¡Bienvenido a un mundo donde la solidez no es negociable!</p>
-          </div>
-      </div>
-  </div>
-
-  <!-- FOOTER  -->
+    <!-- FOOTER  -->
 
 <!-- grupo 1 logo-->
 <footer class="pie-pagina w-100 text-bg-dark">
@@ -130,19 +103,17 @@
     </div>
 
 <!-- grupo 2 sobre nosotros-->
-<div class="box2 col-lg-4 text-center mt-5">
-  <div class="row container-fluid">
-     <h4 class="m-1">INFORMACIÓN</h4>
-  <a href="index.html" class="m-1">Inicio</a>
-  <a href="sobreancora.html" class="m-1">Sobre ÁNCORA</a>
-  <a href="proyectos.html" class="m-1">Proyectos</a>
-  <a href="info.html" class="m-1">Info+</a>
-  <a href="FormularioAncora.html" class="m-1">Contacto</a>
-  <a href="#" class="m-1">Acerca de</a>
+    <div class="box2 row col-lg-4 text-center mt-5">
+      <div class="row container-fluid">
+      <h4 class="m-1">INFORMACIÓN</h4>
+      <a href="index.html" class="m-1">Inicio</a>
+      <a href="sobreancora.html" class="m-1">Sobre ÁNCORA</a>
+      <a href="proyectos.html" class="m-1">Proyectos</a>
+      <a href="info.html" class="m-1">Info+</a>
+      <a href="FormularioAncora.html" class="m-1">Contacto</a>
+      <a href="#" class="m-1">Acerca de</a>
+    </div>
   </div>
- 
-</div>
-
 
 <!-- grupo 3 redes-->
     <div class="box3 col-lg-4">
@@ -161,9 +132,9 @@
       <small>&copy;2023 <b>ANCORA</b>- Todos los Derechos Reservados.</small>
     </div>
 </footer>
-
+    
     </body>
-
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
     <script
     src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
     integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
@@ -174,9 +145,6 @@
     integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
     crossorigin="anonymous"
   ></script>
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
   <script src="https://unpkg.com/scrollreveal"></script>
-  <script type="text/javascript" src="src/main.js"></script>
+  <script src="calcular.js"></script>
+  </html>

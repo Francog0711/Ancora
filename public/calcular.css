@@ -1,0 +1,6 @@
+body{
+    background-image: url(/img/calculo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    backdrop-filter: blur(2px);
+}
