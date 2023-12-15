@@ -195,20 +195,54 @@
     <script>
       document.addEventListener('DOMContentLoaded', function () {
           const formulario = document.getElementById('formulario-contacto');
-  
-          
+    
           formulario.addEventListener('submit', function (event) {
-              
               event.preventDefault();
-
-              Swal.fire({
-                  icon: 'success',
-                  title: '¡Envío exitoso!',
-                  text: 'Tu formulario fue enviado correctamente.',
-              });
+    
+              // Agrega aquí la lógica para enviar el formulario
+              enviarFormulario();
           });
+    
+          function enviarFormulario() {
+              // Obtén los datos del formulario si es necesario
+              const formData = new FormData(formulario);
+    
+              // Agrega la lógica para enviar el formulario a través de fetch o AJAX
+              fetch('https://formsubmit.co/francogabrielalconchel@gmail.com', {
+                  method: 'POST',
+                  body: formData,
+              })
+              .then(response => response.json())
+              .then(data => {
+                  // Verifica si el envío fue exitoso
+                  if (data.success) {
+                      // Muestra el mensaje de éxito
+                      Swal.fire({
+                          icon: 'success',
+                          title: '¡Envío exitoso!',
+                          text: 'Tu formulario fue enviado correctamente.',
+                      });
+                  } else {
+                      // Muestra un mensaje de error si es necesario
+                      Swal.fire({
+                          icon: 'error',
+                          title: 'Error',
+                          text: 'Hubo un problema al enviar el formulario. Por favor, inténtalo de nuevo.',
+                      });
+                  }
+              })
+              .catch(error => {
+                  // Muestra un mensaje de error en caso de un error de red u otro problema
+                  console.error('Error al enviar el formulario:', error);
+                  Swal.fire({
+                      icon: 'error',
+                      title: 'Error',
+                      text: 'Hubo un problema al enviar el formulario. Por favor, inténtalo de nuevo.',
+                  });
+              });
+          }
       });
-  </script>
+    </script>
 
     <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
     <script
