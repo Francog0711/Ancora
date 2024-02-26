@@ -13,13 +13,45 @@
     <title>App Calculo</title>
 </head>
 <body>  
-        <% if (login) { %>
 
-            <h1>El usuario conectado es: <strong><%= name %></strong></h1>
-            <a href="logout" class="a-logout">Cerrar Sesión</a>
-            <% } else { %>
-                <h1><strong><%= name %></strong></h1>
-                <a href="login" class="a-login">Ir al LOGIN</a>
-        <% } %>
+
+        <% if (login) { %>
+          <h1>El usuario conectado es: <strong><%= name %></strong></h1>
+          <div class="container text-center">
+            <div class="row justify-content-center mt-5">
+              <label class="col-3 col-form-label">Poner precio</label>
+              <div class="col-8 col-md-4">
+                  <input type="text" class="form-control" id="mts-2">
+              </div>
+            </div>
+            <div class="row justify-content-center mt-5">
+              <label class="col-3 col-form-label">Fecha de Creación</label>
+              <div class="col-8 col-md-4">
+                <input type="date" class="form-control" id="fecha">
+              </div>
+              <button type="button" class="btn btn-success p-3 mt-5 form-control w-50">Enviar</button>
+          </div>
+
+          <div class="row justify-content-center mt-5">
+
+            <label class="col-3 col-form-label">Actualizar precio</label>
+            <div class="col-8 col-md-4">
+                <input type="text" class="form-control" id="mts-2">
+            </div>
+        </div>
+        <div class="row justify-content-center mt-5">
+          <label class="col-3 col-form-label">Fecha de Actualización</label>
+          <div class="col-8 col-md-4">
+              <input type="date" class="form-control" id="fecha">
+          </div>
+        </div>
+        <button type="button" class="btn btn-success p-3 mt-5 form-control w-50">Actualizar</button>
+      </div>
+        <a href="logout" class="a-logout container text-bg-dark text-decoration-none p-3 mt-5 form-control w-50">Cerrar Sesión</a>
+        <% } else { %>
+          <h1 class="container text-center border-dark rounded-5"><strong><%= name %></strong></h1>
+          <a href="login" class="a-login btn btn-warning p-3 mt-5 form-control w-50 text-decoration-none">Ir al LOGIN</a>
+          <% } %>
+           
 </body>
 </html>

@@ -1,8 +1,8 @@
 body{
-    background-image: url(/img/calculo.jpg);
+    background-image: url(/img/calculo.jpg)!important;
     background-size: cover;
     background-repeat: no-repeat;
-    backdrop-filter: blur(2px);
+    
 }
 
 .container {
