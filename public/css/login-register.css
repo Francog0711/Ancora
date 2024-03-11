@@ -60,7 +60,28 @@ body {
     color: #fff;
     opacity: 0.8;
 }
+.btn-reestablecer{
+    width: 100%;
+    padding: 15px;
+    background-color: #287271;
+    border: 0;
+    box-sizing: border-box;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: large;
+    color: #f4a261;
+    margin-top: 20px;
+    
 
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+    text-decoration: none;
+}
+.btn-reestablecer:hover{
+    color: #fff;
+    opacity: 0.8;
+}
 
 
 

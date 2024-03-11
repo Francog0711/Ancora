@@ -1,10 +1,54 @@
 body{
-    background-image: url(/img/calculo.jpg)!important;
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-color: #6666;
     
 }
 
 .container {
     height: 450px;
 }
+
+div .col-md-6{
+    border: solid 1px #fff;
+    border-radius: 20px;
+}
+
+/* FOOTER */
+
+.pie-pagina {
+    margin-top: 450px;
+  }
+  
+  .box1 .img-container a img{
+    width: 250px;
+    height: auto;
+  }
+  
+  .box2 a{
+    text-decoration: none;
+    color:#0099ff;
+  }
+  
+  .box2 a:hover{
+    color: #ffffff;
+    transform: scale(1.1);
+  }
+  
+  .redes a{
+    text-decoration: none;
+    text-align: center;
+    transition: all .3s ease;
+    color: #0099ff;
+  }
+  .redes a:hover{
+    color:rgb(216, 255, 242);
+  }
+  
+  #btn-v-inicio{
+    background-color: #1d1d1d;
+    color: #d8d8d8;
+    text-decoration: none;
+    border-radius: 10px ;
+  }
+  #btn-v-inicio:hover{
+    background-color: #4181ac;
+  }
