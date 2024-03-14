@@ -15,7 +15,7 @@
             <label for="precioNuevo" class="form-label">Actualizar precio</label>
             <div class="d-flex">
                 <input type="text" class="form-control me-2" id="precioNuevo">
-                <button onclick="actualizarPrecio()" class="btn btn-primary">Update</button>
+                <button onclick="actualizarPrecio(alert('Precio actualizado')) " class="btn btn-primary">Update</button>
             </div>
         </div>
         
@@ -41,33 +41,29 @@
                 if (!response.ok) {
                     throw new Error('Error al actualizar el precio');
                 }
-                return response.json(); // Convertir la respuesta a JSON
+                return response.json(); 
             })
             .then(data => {
-                // Redireccionar a /mensaje después de un breve retraso
-                setTimeout(() => {
-                    window.location.href = '/mensaje';
-                }, 1500);
-            })
-            .catch(error => {
-                console.error('Error:', error);
-                // Manejar el error aquí si es necesario
-            });
-        }
-    </script>
-        <% if(typeof alert != "undefined") { %>
-            <script>
-                Swal.fire({
-                    title: '<%= alertTitle %>',
-                    text: '<%= alertMessage %>',
-                    icon:'<%= alertIcon %>',
-                    showConfirmButton: <%= showConfirmButton %> ,
-                    timer: <%= timer %>
-                }).then(()=>{
-                    window.location='/<%= ruta %>'
-                })
-            </script>
-        <% } %>
-    </script>
+        // Muestra el mensaje de alerta
+        // Swal.fire({
+        //     title: 'Precio actualizado correctamente',
+        //     icon: 'success',
+        //     timer: 1500,
+        //     timerProgressBar: true,
+        //     showConfirmButton: false
+        // });
+    })
+    .catch(error => {
+        console.error('Error:', error);
+    });
+}
+     </script>
+    <!-- //     <% if(typeof alert != "undefined") { %> -->
+    <!-- //         <script>
+                
+    //         </script> -->
+    <!-- //     <% } %> -->
+    <!-- // </script> -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 </html>

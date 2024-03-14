@@ -120,7 +120,6 @@ app.patch('/actualizar-precio', (req, res) => {
 	  data[0].precio = precioNuevo;
 	  fs.writeFileSync('calcular.json', JSON.stringify(data));
 	  console.log('Precio actualizado en el archivo calcular.json:', precioNuevo); // Agregar este console.log para depurar
-	  res.redirect('/mensaje');
 	} catch (error) {
 	  console.error('Error al actualizar el precio en el archivo JSON:', error);
 	  res.status(500).send('Error al actualizar el precio');

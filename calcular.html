@@ -77,59 +77,58 @@
       </div>
         
         
-        <div class="container w-75 text-center mt-5 rounded-5 justify-content-center">
-          <div class="row">
+      <div class="container w-75 text-center mt-5 rounded-5 justify-content-center">
+        <div class="row">
             <div class="col-md-6 mt-5">
-              <h2>PERMISO DE OBRA</h2>
-              <div class="form-group mt-3">
-                <!-- <label for="input1">Categoría</label> -->
-                <P>ARQUITECTURA CATEGORIA-B 80-150 M2</P>
-                <!-- <select name="categoria" id="input1" class="form-control mt-3">
-                  <option value=""selected>Seleccionar Categoria</option>
-                  <option value="categoria-A" >A 0-99 mts2</option>
-            <option value="categoria-B">B 99-300 mts2</option>
-                </select> -->
-               
-              </div>
-              <div class="form-group mt-3">
-                <label for="input2">m2</label>
-                <input type="text" class="form-control mt-3" id="mts-1" placeholder="Ingrese otro valor">
-              </div>
-              <div class="row justify-content-center mt-4">
-                <label class="col-3 col-form-label">Resultado</label>
-                <div class="col-8 col-md-8">
-                    <span type="text" class="form-control" id="resultado-1">0</span>
+                <h2>PERMISO DE OBRA</h2>
+                <div class="form-group mt-3">
+                    <!-- <select name="categoria" id="categoria-1" class="form-control mt-3">
+                        <option value="" selected>Seleccionar Categoria</option>
+                        <option value="categoria-A">A-> +150 mts2</option>
+                        <option value="categoria-B">B-> 80-150 mts2</option>
+                        <option value="categoria-C">C-> 60-80 mts2</option>
+                        <option value="categoria-D">D-> -60 mts2</option>
+                    </select> -->
                 </div>
-            </div>
-              <button type="submit" id="calcular-1" class="btn btn-primary w-25 mt-3">Calcular</button>
+                <div class="form-group mt-3">
+                    <label for="mts-1">m2</label>
+                    <input type="text" class="form-control mt-3" id="mts-1" placeholder="Ingrese los m2 a calcular">
+                    <label for="">Categoría <span id="categoria-1"></span></label>
+                </div>
+                <div class="row justify-content-center mt-4">
+                    <label class="col-3 col-form-label">Resultado</label>
+                    <div class="col-8 col-md-8">
+                        <span type="text" class="form-control" id="resultado-1">$0</span>
+                    </div>
+                </div>
+                <button type="button" id="calcular-1" class="btn btn-primary w-25 mt-3">Calcular</button>
             </div>
             <div class="col-md-6 mt-5">
-              <h2>REGULARIZACION DE OBRA</h2>
-              <div class="form-group mt-3">
-                <p>ARQUITECTURA CATEGORIA-B 80-150 M2</p>
-                <!-- <label for="input3">Categoría</label>
-                <select name="categoria" id="input1" class="form-control mt-3">
-                  <option value=""selected>Seleccionar Categoria</option>
-                  <option value="categoria-A">A 0-99 mts2</option>
-            <option value="categoria-B">B 99-300 mts2</option> -->
-                </select>
-              </div>
-              <div class="form-group mt-3">
-                <label for="input4">m2</label>
-                <input type="text" class="form-control mt-3" id="mts-2" placeholder="Ingrese otro valor">
-              </div>
-              <div class="row justify-content-center mt-4">
-                <label class="col-3 col-form-label">Resultado</label>
-                <div class="col-8 col-md-8">
-                    <span type="text" class="form-control" id="resultado-2">0</span>
+                <h2>REGULARIZACION DE OBRA</h2>
+                <div class="form-group mt-3">
+                    <!-- <select name="categoria" id="categoria-2" class="form-control mt-3">
+                        <option value="" selected>Seleccionar Categoria</option>
+                        <option value="categoria-A">A-> +150 mts2</option>
+                        <option value="categoria-B">B-> 80-150 mts2</option>
+                        <option value="categoria-C">C-> 60-80 mts2</option>
+                        <option value="categoria-D">D-> -60 mts2</option>
+                    </select> -->
                 </div>
+                <div class="form-group mt-3">
+                    <label for="mts-2">m2</label>
+                    <input type="text" class="form-control mt-3" id="mts-2" placeholder="Ingrese los m2 a calcular">
+                    <label for="">Categoría <span id="categoria-2"></span></label>
+                </div>
+                <div class="row justify-content-center mt-4">
+                    <label class="col-3 col-form-label">Resultado</label>
+                    <div class="col-8 col-md-8">
+                        <span type="text" class="form-control" id="resultado-2">$0</span>
+                    </div>
+                </div>
+                <button type="button" id="calcular-2" class="btn btn-primary w-25 mt-3">Calcular</button>
             </div>
-              <button type="submit" id="calcular" class="btn btn-primary w-25 mt-3">Calcular</button>
-            </div>
-          </div>
-        
-        
-      </div>
+        </div>
+    </div>
 
       
 
@@ -180,6 +179,49 @@
 </footer>
     
     </body>
+
+    <!-- <script>
+    // Función para determinar la categoría y mostrar el mensaje
+const determinarCategoria = (metros, categoriaId) => {
+    let categoria = '';
+
+    // Determinar la categoría según la cantidad de metros cuadrados
+    if (metros > 150) {
+        categoria = 'A';
+    } else if (metros > 80) {
+        categoria = 'B';
+    } else if (metros > 60) {
+        categoria = 'C';
+    } else {
+        categoria = 'D';
+    }
+
+    // Mostrar el mensaje con la categoría
+    const mensaje = `Categoría: ${categoria}`;
+    mostrarMensaje(categoriaId, mensaje);
+};
+
+// Función para mostrar el mensaje
+const mostrarMensaje = (categoriaId, mensaje) => {
+    document.getElementById(categoriaId).textContent = mensaje;
+};
+
+// Event listener para los campos de metros cuadrados
+document.getElementById('mts-1').addEventListener('input', (event) => {
+    const metros = parseFloat(event.target.value);
+    determinarCategoria(metros, 'categoria-1');
+});
+
+document.getElementById('mts-2').addEventListener('input', (event) => {
+    const metros = parseFloat(event.target.value);
+    determinarCategoria(metros, 'categoria-2');
+});
+
+
+    </script> -->
+
+
+
     <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
     <script
     src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
