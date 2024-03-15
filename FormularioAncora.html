@@ -136,7 +136,7 @@
             <br>
     
             <button type="submit" class="btn btn-primary rounded-0" id="enviar">Enviar</button>
-            <button type="submit" onclick="(alert('Mensaje enviado'))" class="btn-back btn btn-primary rounded-0 bg-warning "><a class="p-1 text-decoration-none text-dark" href="index.html">Volver al inicio</a></button>
+            <button type="submit" onclick="mostrarAlerta()" class="btn-back btn btn-primary rounded-0 bg-warning "><a class="p-1 text-decoration-none text-dark" href="index.html">Volver al inicio</a></button>
         
             <input type="hidden" name="_next" value="https://francog0711.github.io/ ">
             <input type="hidden" name="_captcha" value="false">
@@ -191,7 +191,11 @@
 </footer>
     
     </body>
-
+    <script>
+      function mostrarAlerta() {
+        alert("¡Hola! Soy un mensaje de alerta.");
+      }
+    </script>
     <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
     <script
     src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
