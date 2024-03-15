@@ -113,13 +113,13 @@ app.post('/auth', async (req, res) => {
 
 app.patch('/actualizar-precio', (req, res) => {
 	const precioNuevo = req.body.precioNuevo;
-	console.log('Nuevo precio recibido:', precioNuevo); // Agregar este console.log para depurar
+	console.log('Nuevo precio recibido:', precioNuevo); // depura
 	try {
 	  // Lee el archivo JSON, actualiza el precio y escribe en el archivo nuevamente
 	  const data = JSON.parse(fs.readFileSync('calcular.json', 'utf8'));
 	  data[0].precio = precioNuevo;
 	  fs.writeFileSync('calcular.json', JSON.stringify(data));
-	  console.log('Precio actualizado en el archivo calcular.json:', precioNuevo); // Agregar este console.log para depurar
+	  console.log('Precio actualizado en el archivo calcular.json:', precioNuevo); // depura
 	} catch (error) {
 	  console.error('Error al actualizar el precio en el archivo JSON:', error);
 	  res.status(500).send('Error al actualizar el precio');
@@ -153,12 +153,12 @@ app.get('/logout', (req, res) => {
 // Ruta para obtener el precio del archivo JSON
 app.get('/precio', (req, res) => {
   try {
-    // Lee el archivo JSON
+    // Lee el .JSON
     const data = fs.readFileSync('calcular.json', 'utf8');
     const json = JSON.parse(data);
     const precio = json[0].precio;
 
-    // Retorna el precio como respuesta
+    // precio como respuesta
     res.json({ precio: precio });
   } catch (error) {
     console.error('Error al leer el archivo JSON:', error);

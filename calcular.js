@@ -2,7 +2,7 @@ let precio = 0;
 let operacion = 0;
 let btnCalcular1 = document.getElementById('calcular-1');
 let btnCalcular2 = document.getElementById('calcular-2');
-let categoriaA = 1; // Nueva definición de categoría A
+let categoriaA = 1; // el unico que computa por 1
 let categoriaB = 0.64;
 let categoriaC = 0.64;
 let categoriaD = 0.64;
@@ -26,7 +26,7 @@ const fetchData = async () => {
     }
 };
 
-// Event listener para el primer botón de calcular
+// Permiso de obra
 btnCalcular1.addEventListener('click', (event) => {
     const metros1 = parseFloat(document.getElementById('mts-1').value);
     const msjCat1 = document.getElementById('categoria-1');
@@ -45,13 +45,13 @@ btnCalcular1.addEventListener('click', (event) => {
     }
 
     const permisoDeobra = precio * metros1 * 0.01;
-    const resultado1 = (operacion * 0.23 + permisoDeobra);
-    document.getElementById('resultado-1').textContent = isNaN(resultado1) ? '0' : resultado1;
+    const resultado1 = (operacion * 0.23 + permisoDeobra).toFixed(2);
+    document.getElementById('resultado-1').textContent = isNaN(resultado1) ? '0' : '$'+resultado1;
 
     event.stopPropagation();
 });
 
-// Event listener para el segundo botón de calcular
+// Regularizar
 btnCalcular2.addEventListener('click', (event) => {
     const metros2 = parseFloat(document.getElementById('mts-2').value);
     const msjCat1 = document.getElementById('categoria-2');
@@ -70,8 +70,8 @@ btnCalcular2.addEventListener('click', (event) => {
     }
 
     const regularizar = precio * metros2 * 0.05;
-    const resultado2 = (operacion * 0.23 + regularizar);
-    document.getElementById('resultado-2').textContent = isNaN(resultado2) ? '0' : resultado2;
+    const resultado2 = (operacion * 0.23 + regularizar).toFixed(2);
+    document.getElementById('resultado-2').textContent = isNaN(resultado2) ? '0' : '$'+resultado2;
 
     event.stopPropagation();
 });
